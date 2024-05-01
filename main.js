@@ -10,134 +10,89 @@ const left9 = document.querySelector(".leftelement9")
 const left10 = document.querySelector(".leftelement10")
 
 
-const right1 = document.querySelector(".rightelement1")
-const right2 = document.querySelector(".rightelement2")
-const right3 = document.querySelector(".rightelement3")
-const right4 = document.querySelector(".rightelement4")
-const right5 = document.querySelector(".rightelement5")
-const right6 = document.querySelector(".rightelement6")
-const right7 = document.querySelector(".rightelement7")
-const right8 = document.querySelector(".rightelement8")
-const right9 = document.querySelector(".rightelement9")
-const right10 = document.querySelector(".rightelement10")
+const right1Div = document.querySelector(".right1Div")
+const right2Div = document.querySelector(".right2Div")
+const right3Div = document.querySelector(".right3Div")
+const right4Div = document.querySelector(".right4Div")
 
-left1.onclick = () => {
-    right1.style.display = "block"
-    right2.style.display = "none"
-    right3.style.display = "none"
-    right4.style.display = "none"
-    right5.style.display = "none"
-    right6.style.display = "none"
-    right7.style.display = "none"
-    right8.style.display = "none"
-    right9.style.display = "none"
-    right10.style.display = "none"
-}
-left2.onclick = () => {
-    right2.style.display = "block"
-    right1.style.display = "none"
-    right3.style.display = "none"
-    right4.style.display = "none"
-    right5.style.display = "none"
-    right6.style.display = "none"
-    right7.style.display = "none"
-    right8.style.display = "none"
-    right9.style.display = "none"
-    right10.style.display = "none"
-}
-left3.onclick = () => {
-    right3.style.display = "block"
-    right2.style.display = "none"
-    right1.style.display = "none"
-    right4.style.display = "none"
-    right5.style.display = "none"
-    right6.style.display = "none"
-    right7.style.display = "none"
-    right8.style.display = "none"
-    right9.style.display = "none"
-    right10.style.display = "none"
-}
-left4.onclick = () => {
-    right4.style.display = "block"
-    right2.style.display = "none"
-    right3.style.display = "none"
-    right1.style.display = "none"
-    right5.style.display = "none"
-    right6.style.display = "none"
-    right7.style.display = "none"
-    right8.style.display = "none"
-    right9.style.display = "none"
-    right10.style.display = "none"
-}
-left5.onclick = () => {
-    right5.style.display = "block"
-    right2.style.display = "none"
-    right3.style.display = "none"
-    right4.style.display = "none"
-    right1.style.display = "none"
-    right6.style.display = "none"
-    right7.style.display = "none"
-    right8.style.display = "none"
-    right9.style.display = "none"
-    right10.style.display = "none"
-}
-left6.onclick = () => {
-    right6.style.display = "block"
-    right2.style.display = "none"
-    right3.style.display = "none"
-    right4.style.display = "none"
-    right5.style.display = "none"
-    right1.style.display = "none"
-    right7.style.display = "none"
-    right8.style.display = "none"
-    right9.style.display = "none"
-    right10.style.display = "none"
-}
-left7.onclick = () => {
-    right7.style.display = "block"
-    right2.style.display = "none"
-    right3.style.display = "none"
-    right4.style.display = "none"
-    right5.style.display = "none"
-    right6.style.display = "none"
-    right1.style.display = "none"
-    right8.style.display = "none"
-    right9.style.display = "none"
-    right10.style.display = "none"
-}
-left8.onclick = () => {
-    right8.style.display = "block"
-    right2.style.display = "none"
-    right3.style.display = "none"
-    right4.style.display = "none"
-    right5.style.display = "none"
-    right6.style.display = "none"
-    right7.style.display = "none"
-    right1.style.display = "none"
-    right9.style.display = "none"
-    right10.style.display = "none"
-}
-left9.onclick = () => {
-    right9.style.display = "block"
-    right2.style.display = "none"
-    right3.style.display = "none"
-    right4.style.display = "none"
-    right5.style.display = "none"
-    right6.style.display = "none"
-    right7.style.display = "none"
-    right8.style.display = "none"
-    right1.style.display = "none"
-    right10.style.display = "none"
-}
-left10.onclick = () => {
-    right10.style.display = "block"
-    right2.style.display = "none"
-    right3.style.display = "none"
-    right4.style.display = "none"
-    right5.style.display = "none"
-    right6.style.display = "none"
-    right7.style.display = "none"
-    right8.style.display = "none"
-    right9.style.display = "none"
-    right1.style.display = "none"
-}
+
+left1.addEventListener("click", () => {
+    let left1btn = document.createElement("button")
+    left1btn.innerHTML = "Клонируемый Элемент 1"
+
+    right1Div.append(left1btn)
+
+
+})
+left2.addEventListener("click", () => {
+    let left2btn = document.createElement("button")
+    left2btn.innerHTML = "Клонируемый Элемент 2"
+
+    right1Div.append(left2btn)
+
+    
+})
+left3.addEventListener("click", () => {
+    let left3btn = document.createElement("button")
+    left3btn.innerHTML = "Клонируемый Элемент 3"
+
+    right1Div.append(left3btn)
+
+    
+})
+left4.addEventListener("click", () => {
+    let left4btn = document.createElement("button")
+    left4btn.innerHTML = "Клонируемый Элемент 4"
+
+    right2Div.append(left4btn)
+
+    
+})
+left5.addEventListener("click", () => {
+    let left5btn = document.createElement("button")
+    left5btn.innerHTML = "Клонируемый Элемент 5"
+
+    right2Div.append(left5btn)
+
+    
+})
+left6.addEventListener("click", () => {
+    let left6btn = document.createElement("button")
+    left6btn.innerHTML = "Клонируемый Элемент 6"
+
+    right2Div.append(left6btn)
+
+    
+})
+left7.addEventListener("click", () => {
+    let left7btn = document.createElement("button")
+    left7btn.innerHTML = "Клонируемый Элемент 7"
+
+    right3Div.append(left7btn)
+
+    
+})
+left8.addEventListener("click", () => {
+    let left8btn = document.createElement("button")
+    left8btn.innerHTML = "Клонируемый Элемент 8"
+
+    right3Div.append(left8btn)
+
+    
+})
+left9.addEventListener("click", () => {
+    let left9btn = document.createElement("button")
+    left9btn.innerHTML = "Клонируемый Элемент 9"
+
+    right3Div.append(left9btn)
+
+    
+})
+left10.addEventListener("click", () => {
+    let left10btn = document.createElement("button")
+    left10btn.innerHTML = "Клонируемый Элемент 10"
+
+    right4Div.append(left10btn)
+
+    
+})
